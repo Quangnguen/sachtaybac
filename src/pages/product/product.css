@@ -1,0 +1,27 @@
+.card {
+  overflow: hidden;
+}
+
+.hover-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 10;
+}
+
+.card:hover .hover-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-card {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .btn-card {
+  opacity: 1;
+}
